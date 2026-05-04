@@ -1,9 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Mi web</title>
+  <title>Mi página</title>
+
+  <style>
+    body {
+      background-color: #111;
+      color: white;
+      font-family: Arial;
+      text-align: center;
+    }
+
+    .perfil {
+      background-color: #222;
+      padding: 30px;
+      margin: 100px auto;
+      width: 300px;
+      border-radius: 10px;
+    }
+
+    button {
+      background-color: #00bcd4;
+      color: black;
+      padding: 10px;
+      border: none;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+  </style>
+
 </head>
 <body>
-  <h1>Hola Jose, ahora sí funciona 🔥</h1>
+
+  <div class="perfil">
+
+    <img src="https://via.placeholder.com/100" style="border-radius: 50%; margin-bottom: 10px;">
+
+    <h1>Jose Gonzalez</h1>
+    <p>Aprendiendo Front-End 🚀</p>
+    <button onclick="saludar()">Contáctame</button>
+
+  </div>
+
+  <script>
+    function saludar() {
+      alert("Hola! gracias por visitar mi página");
+    }
+  </script>
+
 </body>
 </html>
