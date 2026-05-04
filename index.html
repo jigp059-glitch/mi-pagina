@@ -1,30 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Mi página</title>
+  <title>Portafolio Jose</title>
 
   <style>
     body {
-      background-color: #111;
-      color: white;
+      margin: 0;
       font-family: Arial;
+      background: #111;
+      color: white;
+    }
+
+    header {
+      background: #000;
+      padding: 15px;
       text-align: center;
     }
 
-    .perfil {
-      background-color: #222;
-      padding: 30px;
-      margin: 100px auto;
-      width: 300px;
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    section {
+      padding: 40px;
+      text-align: center;
+    }
+
+    .proyectos {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: #222;
+      padding: 20px;
+      width: 200px;
       border-radius: 10px;
     }
 
     button {
-      background-color: #00bcd4;
-      color: black;
-      padding: 10px;
+      background: #00bcd4;
       border: none;
-      margin-top: 10px;
+      padding: 10px;
       cursor: pointer;
     }
   </style>
@@ -32,21 +53,53 @@
 </head>
 <body>
 
-  <div class="perfil">
+<header>
+  <h1>Jose Gonzalez</h1>
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#sobre">Sobre mí</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+</header>
 
-    <img src="https://via.placeholder.com/100" style="border-radius: 50%; margin-bottom: 10px;">
+<section id="inicio">
+  <h2>Bienvenido</h2>
+  <p>Estoy aprendiendo desarrollo Front-End 🚀</p>
+</section>
 
-    <h1>Jose Gonzalez</h1>
-    <p>Aprendiendo Front-End 🚀</p>
-    <button onclick="saludar()">Contáctame</button>
+<section id="sobre">
+  <h2>Sobre mí</h2>
+  <p>Soy principiante en programación, aprendiendo HTML, CSS y JavaScript.</p>
+</section>
 
+<section id="proyectos">
+  <h2>Mis proyectos</h2>
+
+  <div class="proyectos">
+    <div class="card">
+      <h3>Proyecto 1</h3>
+      <p>Mi primera página web</p>
+    </div>
+
+    <div class="card">
+      <h3>Proyecto 2</h3>
+      <p>Página con botón interactivo</p>
+    </div>
   </div>
 
-  <script>
-    function saludar() {
-      alert("Hola! gracias por visitar mi página");
-    }
-  </script>
+</section>
+
+<section id="contacto">
+  <h2>Contacto</h2>
+  <button onclick="contacto()">Escríbeme</button>
+</section>
+
+<script>
+  function contacto() {
+    alert("Puedes contactarme pronto 🚀");
+  }
+</script>
 
 </body>
 </html>
